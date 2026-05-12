@@ -61,6 +61,16 @@ setLoading(false)
 >
   {loading ? "Loading..." : "Login"}
 </button>
+<p className="text-center mt-4 text-zinc-400">
+  Don't have an account?{" "}
+  
+  <span
+    onClick={() => navigate("/signup")}
+    className="text-blue-400 cursor-pointer hover:underline"
+  >
+    Signup
+  </span>
+</p>
 
       </div>
 

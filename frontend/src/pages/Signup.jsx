@@ -1,10 +1,12 @@
 import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 import axios from "axios"
 import { toast } from "react-toastify"
 function Signup() {
     const [name, setName] = useState("")
 const [email, setEmail] = useState("")
 const [password, setPassword] = useState("")
+const navigate = useNavigate()
 const handleSignup = async () => {
 
   try {
@@ -64,6 +66,16 @@ const handleSignup = async () => {
 >
   Signup
 </button>
+<p className="text-center mt-4 text-zinc-400">
+  Already have an account?{" "}
+  
+  <span
+    onClick={() => navigate("/login")}
+    className="text-blue-400 cursor-pointer hover:underline"
+  >
+    Login
+  </span>
+</p>
 
       </div>
 
