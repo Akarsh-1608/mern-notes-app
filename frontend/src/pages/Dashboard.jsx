@@ -13,7 +13,7 @@ function Dashboard() {
         try {
 
             const response = await axios.get(
-                "http://localhost:5000/notes",
+                "https://notes-backend-rppw.onrender.com/notes",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
@@ -37,7 +37,7 @@ function Dashboard() {
         try {
 
             await axios.post(
-                "http://localhost:5000/notes",
+                "https://notes-backend-rppw.onrender.com/notes",
                 {
                     title
                 },
@@ -62,7 +62,7 @@ function Dashboard() {
         try {
 
             await axios.delete(
-                `http://localhost:5000/notes/${id}`,
+                `https://notes-backend-rppw.onrender.com/notes/${id}`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`

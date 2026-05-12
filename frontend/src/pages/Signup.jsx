@@ -10,7 +10,7 @@ const handleSignup = async () => {
   try {
 
     const response = await axios.post(
-      "http://localhost:5000/users/signup",
+      "https://notes-backend-rppw.onrender.com/users/signup",
       {
         name,
         email,
